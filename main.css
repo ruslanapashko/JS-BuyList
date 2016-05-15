@@ -1,3 +1,180 @@
-h1 {
-    color: red;
+body {
+    background-color: gainsboro;
+}
+* {
+    font-family: "Comic Sans MS", "Times New Roman", serif;
+    color: #043b2c;
+}
+#both {
+    width: 80%;
+    margin: 10% auto auto;
+}
+
+.board {
+    background-color: white;
+    box-shadow: grey;
+}
+.basket {
+    width: 67%;
+    float: left;
+    display: inline-block;
+    position: relative;
+    border-radius: 1%;
+    box-shadow: grey;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    min-width: 500px;
+}
+#input{
+    background-color: white;
+    padding: 15px 15px 10px 15px;
+    border-bottom: 1px solid lightgrey;
+    height: 30px;
+}
+#input input {
+    width: 85%;
+    float: left;
+    height: 90%;
+    border: 1px solid lightgrey;
+    float:left;
+    margin-right: 0px;
+}
+#add {
+    background-color: steelblue;
+    color: white;
+    float: left;
+    height: 100%;
+    width: 14%;
+    height: 102%;
+    text-align: center;
+    margin-left: 0px;
+    border: 1px solid steelblue;
+}
+#add:hover {
+    background-color: steelblue;
+}
+.item {
+    background-color: white;
+    padding: 15px 15px 10px 15px;
+    border-bottom: 1px solid lightgrey;
+    height: 30px;
+}
+.name {
+    width: 43%;
+    text-align: left;
+    float: left;
+    border: none;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+.name_crossed {
+    text-decoration: line-through;
+    margin-top: 2px;
+    display: none;
+    width: 43%;
+    text-align: left;
+    float: left;
+}
+.crement {
+    width: 23%;
+    float: left;
+    position: relative;
+    font-weight: bold;
+}
+.but {
+    border-radius: 100%;
+    font-weight: bold;
+    color: white;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+}
+.de {
+    background-color: red;
+    border: 1px solid red;
+}
+.amount {
+    display: inline-block;
+    background-color: lightgrey;
+    width: 23px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2%;
+    padding: 2px;
+}
+.in {
+    background-color: seagreen;
+    border: 1px solid seagreen;
+}
+
+.done {
+    width: 33%;
+    float: right;
+    position: relative;
+}
+.buy {
+    background-color: whitesmoke;
+    color: black;
+    float: right;
+    height: 25px;
+    text-align: center;
+    border: 1px solid white;
+}
+.n_buy {
+    height: 80%;
+    float: right;
+    display: none;
+}
+.close {
+    background-color: red;
+    color: white;
+    width: 25px;
+    height: 25px;
+    float: right;
+    border: 1px solid #ba261e;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 5px;
+}
+.close:hover {
+    background-color: red;
+}
+.list {
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    float: left;
+    text-align: left;
+    min-width: 220px;
+}
+.list div {
+    padding: 10px;
+}
+.list div .li {
+    background-color: rgba(183, 197, 167, 0.58);
+    text-align: left;
+    display: inline-block;
+    height: 40%;
+    border-radius: 10%;
+    margin: 2px 2px 2px 2px;
+    padding: 5px 5px 10px 5px;
+}
+.list_amount {
+    background-color: orangered;
+    color: white;
+    float: right;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    text-align:center;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.shelf {
+    background-color: white;
+    padding: 15px 15px 10px 15px;
+    border-bottom: 1px solid lightgrey;
 }
