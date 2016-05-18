@@ -1,87 +1,89 @@
-<!DOCTYPE html> 
-    <html> 
-    <head lang="uk"> 
-        <meta charset="UTF-8"> 
-        <title>My Buylist</title> 
-        <link rel="stylesheet" type="text/css" href="main.css" /> 
-    </head> 
-    <body> 
-    <div id="both"> 
-    <div class="board basket"> 
-    <div id="input"> 
-    <input type="text" name="ProductName" placeholder="Назва товару"> 
-    <button id="add">Додати</button> 
-    </div> 
-    <div class="item"> 
-    <span> 
-    <input type="text" placeholder="Нова назва" value="Помідори" class="name"> 
-    <span class="name_crossed">Помідори</span> 
-    </span> 
-    <span class="crement"> 
-        <button class="but de" >-</button> 
-        <span class="amount">1</span> 
-        <button class="but in">+</button> 
-    </span> 
-    <span class="done"> 
-        <button class="close">x</button> 
-        <button class="buy">Куплено</button> 
-    </span> 
-    </div> 
-    <div class="item"> 
-        <span> 
-        <input type="text" placeholder="Нова назва" value="Печиво" class="name"> 
-        <span class="name_crossed">Печиво</span> 
-        </span> 
-        <span class="crement"> 
-        <button class="but de">-</button> 
-        <span class="amount">1</span> 
-        <button class="but in">+</button> 
-        </span> 
-        <span class="done"> 
-        <button class="close">x</button> 
-        <button class="buy">Куплено</button> 
-        <button class="n_buy">Не куплено</button> 
-        </span> 
-    </div> 
-    <div class="item"> 
-        <span> 
-        <input type="text" placeholder="Нова назва" value="Сир" class="name" > 
-        <span class="name_crossed">Сир</span> 
-        </span> 
-        <span class="crement"> 
-        <button class="but de">-</button> 
-        <span class="amount">1</span> 
-        <button class="but in">+</button> 
-        </span> 
-        <span class="done"> 
-        <button class="close">x</button> 
-        <button class="buy">Куплено</button> 
-        <button class="n_buy">Не куплено</button> 
-        </span> 
-    </div> 
-        </div> 
-    <div class="board list"> 
-    <div class="item">Залишилося</div> 
-    <div class="shelf"> 
-    <div class="li "> 
-    <span class="liname">Печиво</span> 
-    <span class="list_amount">1</span> 
-    </div> 
-    <div class="li "> 
-    <span class="liname">Сир</span> 
-    <span class="list_amount">1</span> 
-    </div> 
-    <div class="li "> 
-    <span class="liname">Помідори</span> 
-    <span class="list_amount">1</span> 
-    </div> 
-    </div> 
-    <div class="item">Куплено</div> 
-    <div class="shelf_done"> 
-    </div> 
-    </div> 
-</div> 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"> </script> 
-    <script type="text/javascript" src="js/main.js"> </script> 
-</body> 
+<!DOCTYPE html>
+<html>
+<head lang="uk">
+    <meta charset="UTF-8">
+    <title>My Buylist</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+    <div id="both">
+        <div class="board basket">
+            <div id="input">
+                <input type="text" placeholder="Назва товару">
+                <button id="add">Додати</button>
+            </div>
+            <div class="item">
+                <span>
+                <input type="text" placeholder="Нова назва" value="Помідори" class="name">
+                <span class="name_crossed">Помідори</span>
+                </span>
+                <span class="crement">
+                    <button class="but de" disabled="disabled">-</button>
+                    <span class="amount">1</span>
+                    <button class="but in">+</button>
+                </span>
+                <span class="done">
+                    <button class="close">x</button>
+                    <button class="buy">Куплено</button>
+                    <button class="n_buy">Не куплено</button>
+                </span>
+            </div>
+            <div class="item">
+                <span>
+                    <input type="text" placeholder="Нова назва" value="Печиво" class="name">
+                    <span class="name_crossed">Печиво</span>
+                </span>
+                <span class="crement">
+                    <button class="but de" disabled="disabled">-</button>
+                    <span class="amount">1</span>
+                    <button class="but in">+</button>
+                </span>
+                <span class="done">
+                    <button class="close">x</button>
+                    <button class="buy">Куплено</button>
+                    <button class="n_buy">Не куплено</button>
+
+                </span>
+            </div>
+            <div class="item">
+                <span>
+                    <input  type="text" placeholder="Нова назва" value="Сир" class="name" >
+                    <span class="name_crossed">Сир</span>
+                </span>
+                <span class="crement">
+                    <button class="but de" disabled="disabled">-</button>
+                    <span class="amount">1</span>
+                    <button class="but in">+</button>
+                </span>
+                <span class="done">
+                    <button class="close">x</button>
+                    <button class="buy">Куплено</button>
+                    <button class="n_buy">Не куплено</button>
+                </span>
+            </div>
+        </div>
+        <div class="board list">
+            <div class="item">Залишилося</div>
+            <div class="shelf">
+                <div class="li list_need">
+                    <span class="liname">Печиво</span>
+                    <span class="list_amount">1</span>
+                </div>
+                <div class="li list_need">
+                     <span class="liname">Сир</span>
+                    <span class="list_amount">1</span>
+                </div>
+                <div class="li list_need">
+                     <span class="liname">Помідори</span>
+                    <span class="list_amount">1</span>
+                </div>
+            </div>
+            <div class="item">Куплено</div>
+            <div class="shelf_done">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"> </script>
+    <script type="text/javascript" src="js/main.js"> </script>
+</body>
 </html>

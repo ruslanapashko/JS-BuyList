@@ -94,6 +94,9 @@ body {
     background-color: red;
     border: 1px solid red;
 }
+.de:disabled {
+    background-color: #ff7c6e;
+}
 .amount {
     display: inline-block;
     background-color: lightgrey;
@@ -172,7 +175,9 @@ body {
     margin-top: 2px;
     margin-left: 5px;
 }
-
+.list_done {
+    text-decoration: line-through;
+}
 .shelf {
     background-color: white;
     padding: 15px 15px 10px 15px;
