@@ -1,4 +1,4 @@
-$(function(){
+п»ї$(function(){
     var BASKET = $(".basket");
     var ITEM_TEMPLATE ='<div class="item">'+$(".item").html()+'</div>';
     var LIST_TEMPLATE = '<div class="li list_need">'+$(".li").html()+'</div>';
@@ -155,7 +155,7 @@ $(function(){
 //Changing amount
         node.find(".de").click(function(){decrement(node);});
         node.find(".in").click(function(){increment(node);});
-        node.find(".buy").text("Куплено");
+        node.find(".buy").text("РљСѓРїР»РµРЅРѕ");
 //Bought Action
         node.find(".buy").click(function(){bought(node); });
         node.find(".n_buy").click(function(){ notBought(node); });
